@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#F1EBD4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewItemState"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_may" />
+
+        <TextView
+            android:id="@+id/textViewItemHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="17"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewItemState" />
+
+        <TextView
+            android:id="@+id/textViewItemTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="35 C"
+            android:textColor="#F00"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewItemState"
+            app:layout_constraintStart_toEndOf="@+id/imageViewItemState"
+            app:layout_constraintTop_toTopOf="@+id/imageViewItemState" />
+
+        <TextView
+            android:id="@+id/textViewItemState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewItemTemp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewItemDate"
+            app:layout_constraintStart_toEndOf="@+id/textViewItemTemp"
+            app:layout_constraintTop_toTopOf="@+id/textViewItemTemp" />
+
+        <TextView
+            android:id="@+id/textViewItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="30/8/2020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewItemHour"
+            app:layout_constraintTop_toBottomOf="@+id/textViewItemHour" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

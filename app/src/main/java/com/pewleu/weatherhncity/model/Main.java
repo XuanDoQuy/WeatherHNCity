@@ -6,6 +6,11 @@ public class Main {
     private int humidity;
     private double temp_min;
     private double temp_max;
+    private double feels_like;
+
+    public double getFeels_like() {
+        return feels_like;
+    }
 
     public double getTemp() {
         return temp;
